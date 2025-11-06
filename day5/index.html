@@ -9,6 +9,7 @@
 
 <body>
     <!-- headline -->
+     <center>
     <h2>Student Admission Form </h2>
     <form>
 
@@ -17,23 +18,23 @@
         <input type="file"> <br><br>
 
         <label for="fullname">Full Name:</label>
-        <input type="text" placeholder="Enter Your Full Name"><br><br>
+        <input type="text" placeholder="Enter Your Full Name " required><br><br>
 
         <label for="age">Age</label>
-        <input type="number" placeholder="Enter Your Age "><br><br>
+        <input type="number" placeholder="Enter Your Age " required><br><br>
 
         <label for="date of brith">Date of Birth</label>
-        <input type="date" placeholder="Enter Your DOB"> <br><br>
+        <input type="date" placeholder="Enter Your DOB" required> <br><br>
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" placeholder="10-digit number"><br><br>
+        <input type="tel" placeholder="10-digit number" required><br><br>
 
         <label for="email">Email:</label>
-        <input type="email" placeholder="example@mail.com"><br><br>
+        <input type="email" placeholder="example@mail.com" required><br><br>
 
         <!-- file upload filed -->
         <label for="certificates">Upload Certificates:</label>
-        <input type="file"><br><br>
+        <input type="file" required><br><br>
 
         <!-- Dropdowns -->
         <label for="gender">Gender:</label>
@@ -61,26 +62,27 @@
             <option value="Other">Other</option>
         </select><br><br>
 
-          <!-- Checkbox Group -->
-    <label>Parent/Guardian Type:</label><br>
-    <input type="checkbox" name="guardian[]" value="Father"> Father<br>
-    <input type="checkbox" name="guardian[]" value="Mother"> Mother<br>
-    <input type="checkbox" name="guardian[]" value="Guardian"> Guardian<br><br>
+        <!-- Checkbox Group -->
+        <label>Parent/Guardian Type:</label><br>
+        <input type="checkbox" name="guardian[]" value="Father"> Father<br>
+        <input type="checkbox" name="guardian[]" value="Mother"> Mother<br>
+        <input type="checkbox" name="guardian[]" value="Guardian"> Guardian<br><br>
 
-    <!-- Text Boxes -->
-    <label for="occupation">Parent Occupation:</label>
-    <input type="text" id="occupation" name="occupation" placeholder="e.g., Engineer"><br><br>
+        <!-- Text Boxes -->
+        <label for="occupation">Parent Occupation:</label>
+        <input type="text" placeholder=""><br><br>
 
-    <label for="religion">Religion:</label>
-    <input type="text" placeholder="e.g., Hindu"><br><br>
+        <label for="religion">Religion:</label>
+        <input type="text" placeholder="e.g., Hindu"><br><br>
 
-    <label for="activities">Extra-Curricular Activities:</label>
-    <input type="text" placeholder="e.g., Football, Music"><br><br>
+        <label for="activities">Extra-Curricular Activities:</label>
+        <input type="text" placeholder="e.g., Football, Music"><br><br>
 
-    <!-- Submit -->
-    <input type="submit" >
-    <!-- reset -->
-     <input type="reset">
+        <!-- Submit -->
+        <input type="submit">
+        <!-- reset -->
+        <input type="reset">
+        </center>
     </form>
 
 </body>
