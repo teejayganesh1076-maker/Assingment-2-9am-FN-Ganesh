@@ -1,0 +1,54 @@
+
+/* Reset spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f7;
+  color: #333;
+}
+header {
+  background-color: #997ef7;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: rgb(196, 199, 245);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.intro,
+.paragraphss {
+  padding: 30px;
+  text-align: center;
+}
+.paragraph-box {
+  background-color:  rgb(196, 199, 245);
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.paragraph-box h3 {
+  color: #0077b6;
+  margin-bottom: 8px;
+}
+footer {
+  background-color:#4d2cc7;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  margin-top: 20px;
+}
