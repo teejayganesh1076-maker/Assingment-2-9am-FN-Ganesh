@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Profile Page</title>
+
+    <style>
+      .profile-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background: rgb(157, 171, 202);
+      }
+
+      .profile-header img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .profile-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .box {
+        background: lightgray;
+        padding: 15px;
+        text-align: center;
+        border-radius: 8px;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="profile-header">
+      <img src="" alt="Profile" />
+      <div>
+        <h3>GANESH</h3>
+        <p>Web Developer</p>
+      </div>
+    </div>
+
+    <div class="profile-grid">
+      <div class="box">About</div>
+      <div class="box">Skills</div>
+      <div class="box">Projects</div>
+    </div>
+  </body>
+</html>

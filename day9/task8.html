@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Page Layout</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+      }
+
+      .container {
+        display: grid;
+        height: 100vh;
+
+        grid-template-areas:
+          "header header"
+          "nav    main"
+          "aside  main"
+          "footer footer";
+
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 80px auto auto 60px;
+        gap: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      header {
+        grid-area: header;
+        background: #6a5acd;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border-radius: 10px;
+      }
+
+      nav {
+        grid-area: nav;
+        background: #a0ee94;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      main {
+        grid-area: main;
+        background: #6c5151;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 22px;
+      }
+
+      aside {
+        grid-area: aside;
+        background: #b46bdc;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      footer {
+        grid-area: footer;
+        background: #708090;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <nav>Navigation</nav>
+      <main>Main Content</main>
+      <aside>Sidebar</aside>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
