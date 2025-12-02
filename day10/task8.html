@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dashboard {
+        display: grid;
+        height: 100vh;
+        gap: 10px;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 60px 1fr 100px 50px;
+        grid-template-areas:
+          "header header"
+          "sb1 main"
+          "sb1 widgets"
+          "footer footer";
+      }
+      .header {
+        grid-area: header;
+        background: lightblue;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .sb1 {
+        grid-area: sb1;
+        background: lightgray;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main {
+        grid-area: main;
+        background: lightgreen;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .widgets {
+        grid-area: widgets;
+        background: peachpuff;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer {
+        grid-area: footer;
+        background: lightsalmon;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <header class="header">Header</header>
+      <aside class="sb1">Sidebar</aside>
+      <main class="main">Main Content</main>
+      <section class="widgets">Widgets</section>
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>

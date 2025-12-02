@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f6f6f6;
+        margin: 0;
+      }
+      .blog-container {
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 80px 1fr;
+        grid-template-areas:
+          "header header"
+          "posts  sidebar";
+      }
+      .header {
+        font-size: 60px;
+        grid-area: header;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        font-size: 24px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: grid;
+        justify-content: center;
+      }
+      .posts {
+        grid-area: posts;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+      }
+      .post {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+      .sidebar ul {
+        padding-left: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blog-container">
+      <header class="header"><b>My blog</b></header>
+      <main class="posts">
+        <article class="post">Post 1</article>
+        <article class="post">Post 2</article>
+        <article class="post">Post 3</article>
+        <article class="post">Post 4</article>
+      </main>
+      <aside class="sidebar">
+        <h3>About Me</h3>
+        <p>Lorem ipsum, dolor sit amet.</p>
+        <h3>Categories</h3>
+        <ul>
+          <li>Tech</li>
+          <li>Programming</li>
+          <li>Web Design</li>
+          <li>News</li>
+        </ul>
+      </aside>
+    </div>
+  </body>
+</html>

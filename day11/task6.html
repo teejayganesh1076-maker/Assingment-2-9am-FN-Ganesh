@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 10vh 80vh 10vh;
+
+        grid-template-areas:
+          "h h"
+          "sdb main"
+          "f f";
+
+        height: 100vh;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      /* Areas */
+      .header {
+        grid-area: h;
+        background: rgb(57, 146, 176);
+        padding: 20px;
+      }
+
+      .sdb {
+        grid-area: sdb;
+        background: lightgray;
+        padding: 20px;
+      }
+
+      .content {
+        grid-area: main;
+        background: rgb(238, 150, 150);
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+
+      .footer {
+        grid-area: f;
+        background: lightcoral;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">Header</header>
+
+      <aside class="sdb">Sidebar</aside>
+
+      <main class="content">Main Content</main>
+
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        margin: 50px auto;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(108, 78, 219);
+        border-radius: 50%;
+        position: relative;
+        animation: ball 1s ease-in-out infinite;
+      }
+      .one{
+        background-color: brown;
+      }
+      @keyframes ball {
+        0% {
+          top: 0;
+        }
+        50% {
+          top: 150px;
+        }
+        100% {
+          top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box one"></div>
+  </body>
+</html>

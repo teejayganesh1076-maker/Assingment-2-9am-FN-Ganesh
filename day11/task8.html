@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f6fa;
+        color: #333;
+      }
+
+      .dashboard {
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+
+        grid-template-columns: 240px 1fr 1fr;
+        grid-template-rows: 70px 120px 1fr 200px 50px;
+
+        grid-template-areas:
+          "header   header   header"
+          "sidebar  topbar   topbar"
+          "sidebar  cards    chart"
+          "sidebar  table    chart"
+          "footer   footer   footer";
+      }
+
+      .header {
+        grid-area: header;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .sidebar nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .sidebar a {
+        text-decoration: none;
+        color: #333;
+        padding: 8px 0;
+        font-size: 16px;
+      }
+
+      .sidebar a:hover {
+        color: #0066ff;
+      }
+
+      .topbar {
+        grid-area: topbar;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .topbar input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+
+      .cards {
+        grid-area: cards;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
+
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 600;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .chart {
+        grid-area: chart;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .table {
+        grid-area: table;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer {
+        grid-area: footer;
+        text-align: center;
+        padding: 10px;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <header class="header">
+        <h2>Dashboard</h2>
+      </header>
+
+      <aside class="sidebar">
+        <nav>
+          <a href="#">Overview</a>
+          <a href="#">Analytics</a>
+          <a href="#">Reports</a>
+          <a href="#">Settings</a>
+        </nav>
+      </aside>
+
+      <div class="topbar">
+        <input type="text" placeholder="Search..." />
+        <button>Profile</button>
+      </div>
+
+      <section class="cards">
+        <div class="card">Users</div>
+        <div class="card">Sales</div>
+        <div class="card">Revenue</div>
+      </section>
+
+      <section class="chart">Chart Area</section>
+
+      <section class="table">Table Section</section>
+
+      <footer class="footer">© 2025 GANESH S</footer>
+    </div>
+  </body>
+</html>

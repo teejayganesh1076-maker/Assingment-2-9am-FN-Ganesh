@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        padding: 20px;
+      }
+      .header {
+        background-color: rgb(106, 255, 0);
+        padding: 20px;
+        text-align: center;
+      }
+      .nav {
+        background-color: black;
+        color: azure;
+        padding: 10px;
+        text-align: center;
+      }
+      .content {
+        display: flex;
+        gap: 10px;
+      }
+      .main {
+        display: flex;
+        flex: 2;
+        background-color: aquamarine;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+      }
+      .sidebar {
+        display: flex;
+        flex: 1;
+        background-color: bisque;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer {
+        background-color: aqua;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">Header</header>
+
+      <nav class="nav">Navigation</nav>
+
+      <div class="content">
+        <aside class="sidebar">Sidebar</aside>
+        <main class="main">Main Content</main>
+      </div>
+
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>

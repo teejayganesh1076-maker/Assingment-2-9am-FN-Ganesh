@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gallery {
+        display: grid;
+        gap: 15px;
+
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="./gwen.jpg" alt="photo" />
+      <img src="./gwen.jpg" alt="photo" />
+      <img src="./gwen.jpg" alt="photo" />
+      <img src="./gwen.jpg" alt="photo" />
+      <img src="./gwen.jpg" alt="photo" />
+      <img src="./gwen.jpg" alt="photo" />
+    </div>
+  </body>
+</html>

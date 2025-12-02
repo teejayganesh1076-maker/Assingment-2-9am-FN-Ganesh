@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: rgb(96, 84, 71);
+        display: grid;
+        grid-template-areas:
+          "h h"
+          "i m"
+          "f f";
+      }
+      .head a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      .head a:hover {
+        color: black;
+        font-size: large;
+      }
+
+      .head {
+        background-color: rgb(102, 102, 180);
+        grid-area: h;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        padding: 20px;
+      }
+      main {
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+        grid-area: m;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+        height: 200px;
+      }
+
+      .image {
+        grid-area: i;
+        float: right;
+        width: 200px;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+      .image img {
+        border-radius: 16px;
+        width: 200px;
+        margin: 20px;
+      }
+      footer {
+        background-color:rgb(102, 102, 180);
+        grid-area: f;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="head">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </header>
+
+      <main>
+        <h1>GANESH S</h1>
+
+        <p>He is a quick learner..</p>
+      </main>
+      <div class="image">
+        <img src="" alt="image" />
+      </div>
+      <footer>
+        <p>It's created by GANESH &copy;</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dovument</title>
+
+    <style>
+      .card {
+        width: 220px;
+        height: 300px;
+        perspective: 1000px;
+        margin: 50px auto;
+      }
+      .inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+
+      .card:hover .inner {
+        transform: rotateY(180deg);
+      }
+
+      .side {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        border-radius: 10px;
+        color: white;
+      }
+
+      .front {
+        background-color: #4a90e2;
+      }
+
+      .back {
+        background-color: #333;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="inner">
+        <div class="side front">Front</div>
+        <div class="side back">Back</div>
+      </div>
+    </div>
+  </body>
+</html>

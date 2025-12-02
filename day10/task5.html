@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgb(231, 228, 66);
+        height: 300px;
+        grid-template-areas: "h h" "sb1 main" "f f";
+      }
+      .container div {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .header {
+        grid-area: h;
+        background-color: rgba(89, 147, 248, 0.586);
+        color: aliceblue;
+      }
+      .main {
+        grid-area: main;
+        background-color: rgba(233, 89, 89, 0.694);
+        color: aliceblue;
+      }
+      .sb1 {
+        grid-area: sb1;
+        background-color: rgba(86, 202, 140, 0.723);
+        color: aliceblue;
+      }
+      .footer {
+        grid-area: f;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="main">Main</div>
+      <div class="sb1">sb1</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        background-color: bisque;
+        height: 300px;
+        border: 2px solid black;
+      }
+      .block {
+        float: left;
+        margin-right: 20px;
+      }
+      .block1 {
+        float: right;
+      }
+      .container::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Float Element</h2>
+    <div class="container">
+      <div class="block"><img src="download1.jpeg" alt="" width="150x" /></div>
+      <div class="block1">
+        <img src="download1.jpeg" alt="" width="150px" />
+      </div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+        dignissimos facilis quasi explicabo provident quaerat pariatur at fuga,
+        in voluptas saepe, libero doloribus nulla, commodi voluptates? Quo ipsam
+        nemo placeat provident nesciunt omnis doloremque veniam quibusdam
+        similique! Molestias eveniet fugit vero voluptatem praesentium similique
+        quisquam quidem adipisci, distinctio suscipit quis dolores quia veniam
+        possimus, beatae quae minima! Ut nisi quos libero saepe mollitia dolorum
+        quae numquam perferendis tempora omnis pariatur voluptas quaerat ipsum
+        adipisci maxime doloribus officia, iusto blanditiis reprehenderit?
+        Fugiat sint voluptate facilis laboriosam! Tempora, itaque dolorem.
+        Accusantium necessitatibus beatae fuga iusto eveniet doloribus
+        doloremque, natus soluta nulla vero aliquam aut magni sequi dolorum
+        facilis porro officiis pariatur ipsa maxime debitis similique? Magnam
+        aut neque fuga adipisci voluptatem rem, perspiciatis placeat! Labore
+        quam culpa blanditiis vel dolor in quae. Dolor distinctio nulla
+        molestiae omnis molestias officia assumenda esse, id beatae sint?
+        Eligendi possimus vitae doloremque fuga sunt, adipisci fugit. lorem500
+      </p>
+    </div>
+  </body>
+</html>
