@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const fixedpassword = "ABD";
+
+      function arr() {
+        let password = prompt("Enter ur Password");
+        return password;
+      }
+      let pass;
+      do {
+        console.log("Enter the correct password", password);
+
+        pass = arr();
+      } while (pass != fixedpassword);
+      document.write("password match");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+let num = 20;
+let str = "30";
+let bign = 468247823n;
+let bool = true;
+let nul = null;
+let undef;
+let a = Symbol("hello");
+console.log(num);
+console.log(str);
+console.log(bign);
+console.log(nul);
+console.log(undef);
+console.log(bool);
+console.log(a);

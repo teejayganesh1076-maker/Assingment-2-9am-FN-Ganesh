@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Table Generator</title>
+  </head>
+  <body>
+    <script>
+      let num = prompt("Enter a number:");
+
+      num = Number(num);
+
+      if (isNaN(num)) {
+        document.write("Please enter a valid number!");
+      } else {
+        document.write("<h2>Multiplication Table of " + num + "</h2>");
+
+        for (let i = 1; i <= 10; i++) {
+          document.write(num + " x " + i + " = " + num * i + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

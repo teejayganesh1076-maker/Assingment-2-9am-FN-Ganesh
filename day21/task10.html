@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let student = {ganesh: true, ram: false, sakthivel: true, surender: true };
+      for (let i in student) {
+        if (student[i] == true) {
+          document.write("Present student :");
+          document.writeln(i);
+        } else {
+          document.write("Absent student :");
+          document.write(i);
+        }
+      }
+    </script>
+  </body>
+</html>
