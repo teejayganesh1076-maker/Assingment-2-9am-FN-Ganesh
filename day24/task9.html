@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="output"></p>
+    <script>
+    class Product {
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+
+  displayProduct() {
+    document.getElementById("output").innerText =
+      `Product: ${this.name}, Price: ₹${this.price}`;
+  }
+}
+
+const p1 = new Product("Bag", 1500);
+p1.displayProduct();
+</script>
+</body>
+</html>
