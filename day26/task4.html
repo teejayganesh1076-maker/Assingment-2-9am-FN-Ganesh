@@ -1,0 +1,10 @@
+<button onclick="removeFirst()">Remove First Item</button>
+
+<script>
+  function removeFirst() {
+    const list = document.getElementById("myList");
+    if (list.firstChild) {
+      list.removeChild(list.firstChild);
+    }
+  }
+</script>

@@ -1,0 +1,13 @@
+<button class="colorBtn" data-color="red">Red</button>
+<button class="colorBtn" data-color="green">Green</button>
+<button class="colorBtn" data-color="blue">Blue</button>
+
+<script>
+  const buttons = document.querySelectorAll(".colorBtn");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.body.style.backgroundColor = btn.dataset.color;
+    });
+  });
+</script>
