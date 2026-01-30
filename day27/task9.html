@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Press Ctrl + S</h3>
+<p id="output"></p>
+
+<script>
+document.addEventListener("keydown", function (event) {
+  if (event.ctrlKey && event.key === "s") {
+    event.preventDefault();
+    document.getElementById("output").innerText = "Ctrl + S pressed!";
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button class="item">Apple</button>
+<button class="item">Banana</button>
+<button class="item">Orange</button>
+
+<p id="output"></p>
+
+<script>
+let items = document.querySelectorAll(".item");
+let output = document.getElementById("output");
+
+items.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    output.innerText = "You clicked: " + btn.innerText;
+  });
+});
+</script>
+</body>
+</html>

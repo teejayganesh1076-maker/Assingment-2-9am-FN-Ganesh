@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<div id="menu" style="width:150px; background:#ccc; padding:10px;">
+  Menu
+  <div id="submenu" style="display:none; background:#eee; padding:10px;">
+    <p>idly</p>
+    <p>dosai </p>
+    <p>pongal </p>
+  </div>
+</div>
+
+<script>
+let menu = document.getElementById("menu");
+let submenu = document.getElementById("submenu");
+
+menu.addEventListener("mouseover", function () {
+  submenu.style.display = "block";
+});
+
+menu.addEventListener("mouseout", function () {
+  submenu.style.display = "none";
+});
+</script>
+</body>
+</html>

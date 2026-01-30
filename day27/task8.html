@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form id="loginForm">
+  <input type="text" id="username" placeholder="Username"><br><br>
+  <input type="password" id="password" placeholder="Password"><br><br>
+  <button type="submit">Login</button>
+</form>
+
+<p id="msg"></p>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+  let msg = document.getElementById("msg");
+
+  if (user === "" || pass === "") {
+    msg.innerText = "All fields are required!";
+    msg.style.color = "red";
+  } else {
+    msg.innerText = "Login successful!";
+    msg.style.color = "green";
+  }
+});
+</script>
+</body>
+</html>

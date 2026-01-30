@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button id="trackBtn">Click Me</button>
+<p>Total Clicks: <span id="clicks">0</span></p>
+
+<script>
+let clicks = 0;
+
+document.getElementById("trackBtn").addEventListener("click", function () {
+  clicks++;
+  document.getElementById("clicks").innerText = clicks;
+});
+</script>
+</body>
+</html>
